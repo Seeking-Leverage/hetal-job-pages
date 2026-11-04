@@ -15,8 +15,11 @@ Open [http://127.0.0.1:43127](http://127.0.0.1:43127).
 
 ```bash
 npm test
+npm run validate-feed
 npm run build
 ```
+
+`validate-feed` reads `http://127.0.0.1:43127/feed.xml`, so the dev server has to be running. Set `VALIDATE_ORIGIN` to check a deployed origin instead.
 
 ## Add or close a job
 
@@ -27,6 +30,7 @@ Each job needs:
 | Field | Notes |
 | --- | --- |
 | `referencenumber` | Unique. Letters, numbers, hyphens. Used in `/jobs/{referencenumber}`. Make a new one when the title changes. |
+| `requisitionid` | Role id shared by the same gig in every city, such as `shelf-recording`. It does not have to be unique. Indeed reads it from `/feed.xml`. |
 | `title` | Job title only. Example: `Shelf recording`. Do not put the city or the pay in the title. |
 | `title_id` | Campaign slug for the download link, such as `shelf-recording`. |
 | `city` | City name. |
@@ -57,6 +61,10 @@ The button is a normal link. It opens `ONELINK_BASE_URL` with:
 Copy `.env.example` to `.env.local` and set the real AppsFlyer OneLink. `SITE_URL` is the public origin, `https://jobs.hetalretail.com`. Changing either value needs a new build, because the pages are generated ahead of time.
 
 Until those values are set, the site uses `https://hetal.onelink.me/placeholder` and `https://jobs.hetalretail.com`.
+
+## Indeed feed
+
+`/feed.xml` is the Indeed Job Sync feed. It lists open jobs only. `SITE_URL` is the origin inside each job URL. `FEED_CONTACT_EMAIL` is the `<email>` Indeed uses to verify the employer account. See `SUBMIT.md` for the employer form.
 
 ## Domain
 

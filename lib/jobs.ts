@@ -62,6 +62,11 @@ export function validateJobs(input: unknown): Job[] {
       errors.push(`${where}: title_id must be a lowercase slug such as shelf-recording`)
     }
 
+    const requisitionid = entry.requisitionid
+    if (typeof requisitionid !== "string" || !REFERENCE.test(requisitionid)) {
+      errors.push(`${where}: requisitionid must be 2 to 64 letters, numbers, hyphens, or underscores`)
+    }
+
     const city = entry.city
     if (typeof city !== "string" || city.trim().length < 2 || /[\r\n]/.test(city)) {
       errors.push(`${where}: city must be plain text`)
@@ -179,6 +184,7 @@ export function validateJobs(input: unknown): Job[] {
     if (
       typeof title === "string" &&
       typeof titleId === "string" &&
+      typeof requisitionid === "string" &&
       typeof city === "string" &&
       typeof state === "string" &&
       typeof postalcode === "string" &&
@@ -193,6 +199,7 @@ export function validateJobs(input: unknown): Job[] {
     ) {
       jobs.push({
         referencenumber: ref,
+        requisitionid,
         title,
         title_id: titleId,
         city,

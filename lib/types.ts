@@ -10,6 +10,7 @@ export type JobStatus = "open" | "closed"
 
 export type Job = {
   referencenumber: string
+  requisitionid: string
   title: string
   title_id: string
   city: string

@@ -15,6 +15,7 @@ const pawtucket = getJob("HR-02860-20261020")
 function sample(overrides: Partial<Job> = {}): Job {
   return {
     referencenumber: "HR-99999-20261104",
+    requisitionid: "shelf-recording",
     title: "Shelf recording",
     title_id: "shelf-recording",
     city: "Testville",

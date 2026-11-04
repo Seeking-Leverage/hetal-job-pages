@@ -1,6 +1,7 @@
 [
   {
     "referencenumber": "HR-03060-20261104",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Nashua",
@@ -17,6 +18,7 @@
   },
   {
     "referencenumber": "HR-07094-20261104",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Secaucus",
@@ -33,6 +35,7 @@
   },
   {
     "referencenumber": "HR-02115-20261103",
+    "requisitionid": "endcap-check",
     "title": "Endcap check",
     "title_id": "endcap-check",
     "city": "Boston",
@@ -49,6 +52,7 @@
   },
   {
     "referencenumber": "HR-04101-20261102",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Portland",
@@ -65,6 +69,7 @@
   },
   {
     "referencenumber": "HR-10023-20261101",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "New York",
@@ -81,6 +86,7 @@
   },
   {
     "referencenumber": "HR-33139-20261030",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Miami Beach",
@@ -97,6 +103,7 @@
   },
   {
     "referencenumber": "HR-60614-20261028",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Chicago",
@@ -113,6 +120,7 @@
   },
   {
     "referencenumber": "HR-02860-20261020",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Pawtucket",
@@ -129,6 +137,7 @@
   },
   {
     "referencenumber": "HR-01060-20261018",
+    "requisitionid": "shelf-recording",
     "title": "Shelf recording",
     "title_id": "shelf-recording",
     "city": "Florence",
