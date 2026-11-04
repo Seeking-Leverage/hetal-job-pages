@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-ring: var(--ring);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --font-sans: var(--font-app-sans), "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+}
+
+:root {
+  --background: #fffcf2;
+  --foreground: #112041;
+  --primary: #ffdc5c;
+  --primary-foreground: #112041;
+  --card: #ffffff;
+  --card-foreground: #112041;
+  --muted: #f3ecd3;
+  --muted-foreground: #3e4d66;
+  --border: #e4dcc8;
+  --ring: #112041;
+  --secondary: #f3ecd3;
+  --secondary-foreground: #112041;
+  --accent: #ffdc5c;
+  --accent-foreground: #112041;
+  --destructive: #8f0000;
+  --input: #e4dcc8;
+  --popover: #ffffff;
+  --popover-foreground: #112041;
+  --radius: 0px;
+}
+
+html {
+  color-scheme: light;
+}
+
+::selection {
+  background: #ffdc5c;
+  color: #112041;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 20;
+  transform: translateY(-150%);
+  background: #ffdc5c;
+  color: #112041;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.job-description p {
+  margin: 0;
+}
+
+.job-description p + p,
+.job-description ul,
+.job-description ol,
+.job-description ul + p,
+.job-description ol + p {
+  margin-top: 0.9rem;
+}
+
+.job-description ul,
+.job-description ol {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.job-description ul {
+  list-style: disc;
+}
+
+.job-description ol {
+  list-style: decimal;
+}
+
+.job-description li + li {
+  margin-top: 0.4rem;
+}
+
+.job-description h2,
+.job-description h3 {
+  margin: 1.25rem 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.job-description a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
